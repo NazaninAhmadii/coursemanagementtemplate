@@ -1,0 +1,9 @@
+<h1>{{course.name}} by {{course.instructor}} [{{course.id}}]</h1>
+<ul class="list-group">
+  <li class="list-group-item"><strong>Start Date: </strong>{{course.startdate}}</li>
+  <li class="list-group-item"><strong>Period: </strong>{{course.period}}</li>
+</ul>
+<a class="btn btn-default pull-left" href="/">Back</a>
+<form method="POST" action="/course/delete/{{course.id}}?_method=DELETE">
+  <input type="submit" class="btn btn-danger pull-right" value="Delete">
+</form>
